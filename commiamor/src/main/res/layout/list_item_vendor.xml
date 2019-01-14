@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:descendantFocusability="blocksDescendants"
+   >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageViewVendor" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" android:layout_weight="0.5"
+        android:paddingLeft="10dp">
+         <TextView
+             android:id="@+id/itemdescriptionVendor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:text="a"
+            android:focusable="false" android:layout_weight="0"
+         />
+        <TextView
+            android:id="@+id/addressVendor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a"
+            android:focusable="false" android:layout_weight="0"
+            />
+        <TextView
+            android:id="@+id/couponsVendor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a"
+            android:focusable="false" android:layout_weight="0"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" android:layout_weight="0.5"
+        >
+
+ 	<TextView
+         android:id="@+id/distanceVendor"
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content"
+         android:gravity="right" android:focusable="false"
+        android:text="0 m" android:layout_weight="0"
+         />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBarVendor"
+            android:numStars="5"
+            android:layout_weight="0"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            android:transformPivotX="0dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginRight="-150dp"
+            android:layout_gravity="right" android:stepSize="1.0"
+            android:isIndicator="true"/>
+
+        <TextView
+            android:id="@+id/reviewsVendor"
+            android:layout_width = "match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right" android:focusable="false"
+            android:text=">" android:layout_weight="0"
+            />
+
+    </LinearLayout>
+
+
+ </LinearLayout>

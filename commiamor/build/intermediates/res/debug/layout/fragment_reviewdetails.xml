@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#fff"
+   >
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal" android:layout_weight="0"
+        >
+
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:id="@+id/imageViewReviewDetails" />
+
+        <TextView
+            android:id="@+id/CustomerNameReviewDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:paddingLeft="10dp" android:layout_toRightOf="@+id/imageViewReviewDetails"/>
+
+
+          <TextView
+              android:id="@+id/CustomerDateReviewDetails"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="11/11/2001"
+              android:focusable="false" android:layout_below="@+id/CustomerNameReviewDetails"
+              android:layout_toRightOf="@+id/imageViewReviewDetails"
+              android:paddingLeft="10dp" />
+
+          <TextView
+              android:id="@+id/ReviewCountDetails"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"  android:layout_below="@id/CustomerDateReviewDetails"
+              android:layout_toRightOf="@+id/imageViewReviewDetails"
+              android:focusable="false" android:text="Reviews: 0"
+              android:paddingLeft="10dp"
+              />
+
+          <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBarReviewDetails"
+            android:numStars="5"
+            android:layout_weight="0"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            android:transformPivotX="0dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginRight="-150dp"
+            android:layout_gravity="right"  android:layout_below="@id/ReviewCountDetails"
+            android:layout_toRightOf="@+id/imageViewReviewDetails"
+            android:paddingLeft="10dp"
+            android:isIndicator="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:layout_weight="0.5"
+        >
+
+        <TextView
+         android:id="@+id/ItemdescriptionReviewDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false" android:text="a"
+         />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="userfull" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout><!-- From: file:/home/marco/Desktop/workspacestudio/commiamor/src/main/res/layout/fragment_reviewdetails.xml -->

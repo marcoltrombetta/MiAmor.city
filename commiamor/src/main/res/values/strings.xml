@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MiAmor</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="rememberme">Remember Me</string>
+    <string name="loading">Loading...</string>
+    <string name="uploading">Uploading...</string>
+    <string name="loadMore">Load More</string>
+    <string name="list">List</string>
+    <string name="map">Map</string>
+    <string name="save">Save</string>
+    <string name="birthday">Birthday</string>
+
+    <string name="coupons">Coupons</string>
+    <string name="products">Products</string>
+    <string name="images">Images</string>
+
+    <string name="loginfirst">Login First</string>
+    <string name="invalidemail">Invalid Email</string>
+    <string name="invaliddata">Fields empty</string>
+    <string name="userexists">User already exists</string>
+
+    <!-- Menu -->
+    <string name="mnuLogin">Login</string>
+    <string name="mnuLogout">Logout</string>
+    <string name="mnuRegister">Register</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_title">Search</string>
+    <string name="search_hint">Search</string>
+
+
+    <string name="RecommendedReviews"><u><b>Recommended Reviews</b></u></string>
+    <string name="Photos"><u><b>Photos</b></u></string>
+</resources>

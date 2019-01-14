@@ -1,0 +1,137 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content" android:scrollbars="vertical"
+	android:background="#fff">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+		android:layout_weight="0">
+
+         <LinearLayout
+		    android:orientation="vertical"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/rounded_corner">
+
+			 <LinearLayout
+				 android:orientation="horizontal"
+				 android:layout_width="match_parent"
+				 android:layout_height="wrap_content" android:layout_weight="1" >
+							 <TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:id="@+id/vendorName" android:layout_weight="0.8"></TextView>
+
+							 <TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:id="@+id/vendorDistance"
+								android:layout_weight="0.2" android:textStyle="bold" android:layout_gravity="right"></TextView>
+		     </LinearLayout>
+
+		      <TextView android:layout_width="match_parent"
+		 		android:layout_height="wrap_content"
+		 		android:id="@+id/vendorAddress"></TextView>
+
+			 <TextView android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:id="@+id/vendorPhone" android:background="@color/red"></TextView>
+
+			 <LinearLayout
+				 android:orientation="horizontal"
+				 android:layout_width="match_parent"
+				 android:layout_height="wrap_content" android:layout_weight="1">
+
+				 <Button android:layout_width="match_parent"
+					 android:layout_height="wrap_content" android:layout_weight="0.25"
+					 android:id="@+id/vendorWriteReviews" android:text="Write Review" android:background="@drawable/vendorbutton"/>
+			 </LinearLayout>
+		 </LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_weight="1">
+
+			<Button android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:layout_weight="0.25"
+				android:id="@+id/bookmark" android:text="Bookmark" android:background="@drawable/vendorbutton"/>
+
+			<Button android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:layout_weight="0.25"
+				android:id="@+id/takefoto" android:text="Take Foto" android:background="@drawable/vendorbutton" />
+
+			<Button android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:layout_weight="0.25"
+				android:id="@+id/vendorCheckin" android:text="Check In" android:background="@drawable/vendorbutton"/>
+
+		</LinearLayout>
+
+
+    <RelativeLayout android:id="@+id/map_frame"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+		android:layout_weight="2">
+
+    <com.google.android.gms.maps.MapView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/mapViewVendorDetails"
+		android:layout_width="match_parent"
+		android:layout_height="150dp" android:layout_weight="0"
+		/>
+
+ </RelativeLayout>
+
+<!--		<android.support.v4.app.FragmentTabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+        </android.support.v4.app.FragmentTabHost>
+
+   <FrameLayout
+     android:id="@+id/realtabcontent"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content" />-->
+
+    </LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_alignBottom="@+id/otherLayout" android:layout_weight="0.9">
+
+		<ListView
+			android:id="@+id/btnlist"
+			android:layout_width="fill_parent"
+			android:layout_height="200dp"
+			android:layout_weight="1"
+			android:drawSelectorOnTop="true" android:scrollbars="vertical"/>
+	</LinearLayout>
+
+	<include layout="@layout/parcial_vendor_details_gallery"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		/>
+
+	<include layout="@layout/parcial_vendor_reviews"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		/>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="50dp" android:layout_weight="1" android:visibility="invisible">
+</LinearLayout>
+	</LinearLayout>
+
+	</ScrollView>
+
+
+<!-- From: file:/home/marco/Desktop/workspacestudio/commiamor/src/main/res/layout/fragment_vendordetails.xml -->

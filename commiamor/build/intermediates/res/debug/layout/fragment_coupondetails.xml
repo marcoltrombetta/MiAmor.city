@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"  android:layout_weight="1" android:background="#fff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageViewDefaultCoupon" />
+
+    <Gallery
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gallery"
+        android:layout_weight="0" android:spacing="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productdesc"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CouponPrice" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CouponDiscount" />
+
+</LinearLayout><!-- From: file:/home/marco/Desktop/workspacestudio/commiamor/src/main/res/layout/fragment_coupondetails.xml -->

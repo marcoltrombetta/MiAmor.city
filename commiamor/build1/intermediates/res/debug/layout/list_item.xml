@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:descendantFocusability="blocksDescendants"
+   android:background="#fff">
+ 
+     <TextView 
+         android:id="@+id/Itemdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:focusable="false"
+         android:gravity="center"
+         />
+
+ 	<TextView
+         android:id="@+id/itemicon"
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+         android:gravity="right"   android:focusable="false"
+        android:text=">" 
+       
+         />
+ </LinearLayout><!-- From: file:/home/marco/Desktop/workspacestudio/commiamor/src/main/res/layout/list_item.xml -->

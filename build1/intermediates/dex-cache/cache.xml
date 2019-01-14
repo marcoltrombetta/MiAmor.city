@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/marco/Desktop/workspacestudio/commiamor/build/intermediates/exploded-aar/workspacestudio/googleplayservices_lib/unspecified/jars/libs/google-play-services.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f0d8e4a84fad131bc291c3c4850afcaa8ba0b299">
+        <dex dex="/home/marco/Desktop/workspacestudio/commiamor/build/intermediates/pre-dexed/debug/google-play-services-8b2b07ec1b3e8b31bb1306c428aba2935d6ddc9a.jar" />
+    </item>
+    <item
+        jar="/home/marco/Desktop/workspacestudio/commiamor/build/intermediates/exploded-aar/workspacestudio/library/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3dd75d22d13d817eff678cfd26bc35c4a31102e0">
+        <dex dex="/home/marco/Desktop/workspacestudio/commiamor/build/intermediates/pre-dexed/debug/classes-90cbf00b22158acba7b340d85a6ded10161e7878.jar" />
+    </item>
+    <item
+        jar="/home/marco/Desktop/workspacestudio/commiamor/libs/jackson-core-asl-1.9.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="194599ab3dd29b63b763e7635c8d7a63c830f058">
+        <dex dex="/home/marco/Desktop/workspacestudio/commiamor/build/intermediates/pre-dexed/debug/jackson-core-asl-1.9.0-11376071bf5ca9b672c01a3bf11f1e3f764c8df4.jar" />
+    </item>
+    <item
+        jar="/home/marco/Desktop/workspacestudio/commiamor/build/intermediates/exploded-aar/workspacestudio/googleplayservices_lib/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d0df9b3d55ec431fb1b852900288265c5402f9d0">
+        <dex dex="/home/marco/Desktop/workspacestudio/commiamor/build/intermediates/pre-dexed/debug/classes-616efa74430ad5e48baee43819578b742bb2183a.jar" />
+    </item>
+    <item
+        jar="/home/marco/Desktop/workspacestudio/commiamor/libs/gson-2.2.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="53bfcd3c8e310d1493b2691484525ed90b04e236">
+        <dex dex="/home/marco/Desktop/workspacestudio/commiamor/build/intermediates/pre-dexed/debug/gson-2.2.2-370bae031613ea96d02068eccef923e181097643.jar" />
+    </item>
+    <item
+        jar="/home/marco/Desktop/workspacestudio/commiamor/libs/jackson-mapper-asl-1.9.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="74828722eb1127057a9522dd6a7a8e208e82b3e7">
+        <dex dex="/home/marco/Desktop/workspacestudio/commiamor/build/intermediates/pre-dexed/debug/jackson-mapper-asl-1.9.0-051e659c837ca9b7f27b7eeb11099a772d0bd66b.jar" />
+    </item>
+    <item
+        jar="/home/marco/Desktop/workspacestudio/commiamor/libs/android-support-v4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fde22d8d2ef6363324a3d79a1dd16c8645c25564">
+        <dex dex="/home/marco/Desktop/workspacestudio/commiamor/build/intermediates/pre-dexed/debug/android-support-v4-78e000262f802dac4a772e16ad1c1457af8bb791.jar" />
+    </item>
+
+</items>

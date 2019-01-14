@@ -1,0 +1,216 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:rfal="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content" android:scrollbars="vertical"
+	android:background="#fff" android:id="@+id/scrolviewVendorDetails" >
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+		android:layout_weight="0">
+
+         <LinearLayout
+		    android:orientation="vertical"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/rounded_corner">
+
+			 <LinearLayout
+				 android:orientation="horizontal"
+				 android:layout_width="match_parent"
+				 android:layout_height="wrap_content" android:layout_weight="1" >
+							 <TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:id="@+id/vendorName" android:layout_weight="0.8"></TextView>
+
+							 <TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:id="@+id/vendorDistance"
+								android:layout_weight="0.2" android:textStyle="bold" android:layout_gravity="right"></TextView>
+
+			 </LinearLayout>
+
+			 <TextView android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:id="@+id/vendorAddress"></TextView>
+
+			 <TextView android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:id="@+id/vendorPhone" android:background="@color/red"></TextView>
+
+			 <TextView android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:id="@+id/vendorOpen"
+				  android:textStyle="bold"></TextView>
+
+			 <RatingBar
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:id="@+id/ratingBarVendorDetails"
+				 android:numStars="5"
+				 android:layout_weight="0"
+				 android:scaleX="0.4"
+				 android:scaleY="0.4"
+				 android:transformPivotX="0dp"
+				 android:clickable="false"
+				 android:focusable="false"
+				 android:layout_marginRight="-150dp"
+				 android:layout_gravity="left" android:stepSize="1.0"
+				 android:isIndicator="true"/>
+
+
+
+			 <LinearLayout
+				 android:orientation="horizontal"
+				 android:layout_width="match_parent"
+				 android:layout_height="wrap_content" android:layout_weight="1">
+
+				 <Button android:layout_width="match_parent"
+					 android:layout_height="wrap_content" android:layout_weight="0.25"
+					 android:id="@+id/vendorWriteReviews" android:text="Write Review" android:background="@drawable/vendorbutton"/>
+			 </LinearLayout>
+		 </LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_weight="1">
+
+			<Button android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:layout_weight="0.25"
+				android:id="@+id/bookmark" android:text="Bookmark" android:background="@drawable/vendorbutton"/>
+
+			<Button android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:layout_weight="0.25"
+				android:id="@+id/takefoto" android:text="Take Foto" android:background="@drawable/vendorbutton" />
+
+		<!--	<Button android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:layout_weight="0.25"
+				android:id="@+id/vendorCheckin" android:text="Check In" android:background="@drawable/vendorbutton"/>
+-->
+		</LinearLayout>
+
+
+    <RelativeLayout android:id="@+id/map_frame"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+		android:layout_weight="2">
+
+    <com.google.android.gms.maps.MapView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/mapViewVendorDetails"
+		android:layout_width="match_parent"
+		android:layout_height="150dp" android:layout_weight="0"
+		/>
+
+ </RelativeLayout>
+
+<!--		<android.support.v4.app.FragmentTabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+        </android.support.v4.app.FragmentTabHost>
+
+   <FrameLayout
+     android:id="@+id/realtabcontent"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content" />-->
+
+    </LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_alignBottom="@+id/otherLayout" android:layout_weight="0.9">
+
+		<ListView
+			android:id="@+id/btnlist"
+			android:layout_width="fill_parent"
+			android:layout_height="200dp"
+			android:layout_weight="1"
+			android:drawSelectorOnTop="true" android:scrollbars="vertical"/>
+	</LinearLayout>
+
+	<include layout="@layout/parcial_vendor_details_gallery"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginBottom="10dp"
+		/>
+
+	<!--<include layout="@layout/parcial_vendor_reviews"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		/>-->
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@android:color/darker_gray"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_marginTop="10dp"
+		android:layout_height="30dp" android:text="@string/RecommendedReviews" android:textStyle="bold"
+		android:textSize="20dp" />
+
+	<ListView
+	android:id="@+id/listVendorReviewPartial"
+	android:layout_width="fill_parent"
+	android:layout_height="250dp"
+	android:layout_weight="1"
+	android:drawSelectorOnTop="true" android:scrollbars="vertical"/>
+
+
+	<Button android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:layout_weight="0.25"
+		android:id="@+id/vendorreviewsSeeAll" android:text="See all reviews" android:background="@drawable/vendorbutton"/>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="50dp" android:layout_weight="1" android:visibility="invisible">
+</LinearLayout>
+	</LinearLayout>
+
+
+	</ScrollView>
+
+
+<!--
+
+ <com.wangjie.rapidfloatingactionbutton.RapidFloatingActionLayout
+				 android:id="@+id/activity_main_rfal"
+				 android:layout_width="match_parent"
+				 android:layout_height="150dp"
+				 rfal:rfal_frame_color="#ffffff"
+				 rfal:rfal_frame_alpha="0.7"
+				 >
+				 <com.wangjie.rapidfloatingactionbutton.RapidFloatingActionButton
+					 xmlns:rfab="http://schemas.android.com/apk/res-auto"
+					 android:id="@+id/activity_main_rfab"
+					 android:layout_width="wrap_content"
+					 android:layout_height="wrap_content"
+					 android:layout_alignParentRight="true"
+					 android:layout_alignParentBottom="true"
+					 android:layout_marginRight="15dp"
+					 android:layout_marginBottom="15dp"
+					 android:padding="8dp"
+					 rfab:rfab_size="normal"
+					 rfab:rfab_drawable="@drawable/rfab__drawable_rfab_default"
+					 rfab:rfab_color_normal="#37474f"
+					 rfab:rfab_color_pressed="#263238"
+					 rfab:rfab_shadow_radius="7dp"
+					 rfab:rfab_shadow_color="#999999"
+					 rfab:rfab_shadow_dx="0dp"
+					 rfab:rfab_shadow_dy="5dp"
+					 />
+			 </com.wangjie.rapidfloatingactionbutton.RapidFloatingActionLayout>
+
+-->

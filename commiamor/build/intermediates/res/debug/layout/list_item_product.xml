@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent" android:descendantFocusability="blocksDescendants"
+   >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageViewProduct" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/ItemNameProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:text="c"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/ItemdescriptionProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:text="a"
+            android:paddingLeft="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:descendantFocusability="blocksDescendants"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+                <TextView
+                    android:id="@+id/ItemPriceProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:text="b"
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:layout_weight="0.2"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/home/marco/Desktop/workspacestudio/commiamor/src/main/res/layout/list_item_product.xml -->

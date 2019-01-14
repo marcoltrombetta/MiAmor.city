@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/marco/Desktop/workspacestudio/commiamor/build/intermediates/exploded-aar/workspacestudio/library/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5533938271fbfa2e32dfb09d755a5439110283b6">
+        <dex dex="/home/marco/Desktop/workspacestudio/commiamor/build/intermediates/pre-dexed/release/classes-90cbf00b22158acba7b340d85a6ded10161e7878.jar" />
+    </item>
+
+</items>

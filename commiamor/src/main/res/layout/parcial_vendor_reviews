@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp" android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"  android:layout_weight="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp" android:text="Recommended Reviews" android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <FrameLayout
+        android:id="@+id/FragmentReview"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="250dp" />
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_weight="0.25"
+        android:id="@+id/vendorreviewsSeeAll" android:text="See All" android:background="@drawable/vendorbutton"/>
+
+</LinearLayout>

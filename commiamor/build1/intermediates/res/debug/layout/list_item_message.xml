@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" android:layout_weight="1">
+    <TextView
+        android:id="@+id/itemtitle"
+        android:layout_width = "wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:text="aa"
+        />
+
+     <TextView 
+         android:id="@+id/Itemdescriptionmes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+         android:text="ab"
+         />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" android:layout_weight="3" android:layout_gravity="right">
+        <TextView
+            android:id="@+id/itemdatesend"
+            android:layout_width = "match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right" android:focusable="false"
+            android:text="ac"
+            />
+
+    </LinearLayout>
+
+ </LinearLayout><!-- From: file:/home/marco/Desktop/workspacestudio/commiamor/src/main/res/layout/list_item_message.xml -->
